@@ -1,8 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
 import { footerLinks } from "@/constants";
-import { link } from "fs";
-
 const Footer = () => {
   return (
     <footer className="flex flex-col text-black-100 mt-5 border-t border-gray-100">
@@ -17,7 +14,7 @@ const Footer = () => {
           />
           <p className="text-base text-gray-700">
             CarHub 2023 <br />
-            All Rights reserved &copy;{" "}
+            All Rights Reserved &copy;{" "}
           </p>
         </div>
         <div className="footer__links">
@@ -31,6 +28,20 @@ const Footer = () => {
               ))}
             </div>
           ))}
+        </div>
+      </div>
+      <div
+        className="flex justify-between items-center flex-wrap mt-10 border-t border-gray-100
+        sm:px-6 px-6 py-10"
+      >
+        <p>@2023 CarHub. All Right Reserved</p>
+        <div className="footer__copyright-link space-x-[10px] ">
+          <a href="/" className="text-gray-500">
+            Privacy Policy
+          </a>
+          <a href="/" className="text-gray-500">
+            Terms of Use
+          </a>
         </div>
       </div>
     </footer>
